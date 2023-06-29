@@ -1,0 +1,178 @@
+.customer-reviews {
+  padding-top: 80px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 121px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 123px;
+  }
+}
+
+.customer-reviews__img {
+  width: 85px;
+  height: 85px;
+  margin-bottom: 29px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 19px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
+}
+
+.customer-reviews__text-wrap {
+  position: relative;
+  width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  background-color: $customer-text-bgc;
+  background-image: url(/images/customer/quotes.png);
+  background-repeat: no-repeat;
+  background-position: 61px 28px;
+
+  @media screen and (min-width: 768px) {
+    width: 620px;
+    margin-bottom: 24px;
+    background-position: 40px 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 926px;
+    margin-bottom: 34px;
+    background-position: 55px 32px;
+  }
+}
+
+.customer-reviews__text {
+  width: 157px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 43px;
+  padding-bottom: 26px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.58;
+  text-align: center;
+  color: $text-color-black;
+
+  @media screen and (min-width: 768px) {
+    width: 460px;
+    padding-top: 47px;
+    padding-bottom: 34px;
+    font-size: 14px;
+    line-height: 2.14;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 750px;
+    padding-bottom: 39px;
+    font-style: 16px;
+    line-height: 1.88;
+  }
+}
+
+.customer-reviews__address {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: center;
+  color: $text-color-black;
+
+  &::before {
+    content: '';
+    display: block;
+    background-image: url(/images/customer/dots.png);
+    width: 32px;
+    height: 4px;
+    margin: 0 auto 18px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 1.88;
+
+    &::before {
+      margin-bottom: 14px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-style: 20px;
+    line-height: 1.85;
+
+    &::before {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.customer-reviews__slider-dots {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.customer-reviews__gradient {
+  position: absolute;
+  top: 71px;
+  left: 50px;
+  display: block;
+  width: 180px;
+  height: 217px;
+  background-color: transparent;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #e1e1e1,
+    #e1e1e1 1px,
+    rgba(250, 250, 250, 0) 1px,
+    rgba(250, 250, 250, 0) 30px
+  );
+
+  @media screen and (min-width: 768px) {
+    top: 76px;
+    left: 60px;
+    width: 524px;
+    height: 63px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    top: 72px;
+    width: 813px;
+    height: 32px;
+  }
+}
+
+.swiper-pagination {
+  position: static;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+}
+
+.swiper-pagination-bullet-active {
+  background-image: url(/images/customer/house.png);
+  width: 13px;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 18px;
+}

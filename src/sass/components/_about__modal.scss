@@ -1,0 +1,93 @@
+.about__backdrop {
+  position: fixed;
+  z-index: 20;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color: #af6a7b, $alpha: 0.5);
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__backdrop.is-hidden .about__modal {
+  transform: scale(2);
+}
+
+.about__backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.about__modal {
+  position: relative;
+  width: 350px;
+  height: 620px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+  transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and(min-width: 768px) {
+    width: 800px;
+    height: 700px;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+.about__backdrop.is-hidden .about__modal {
+  transform: scale(2);
+}
+.close__about_modal {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: $customer-passive-slider-color;
+  @media screen and(min-width: 768px) {
+    top: 90px;
+    right: 55px;
+  }
+}
+.close_icon {
+  width: 10px;
+  height: 10px;
+}
+
+.about__modal_one {
+  color: $text-color-white;
+  width: 300px;
+  height: 500px;
+  background-color: $mobile-menu-background;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-left: 20px;
+  line-height: 1.7;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.about__modal_two {
+  color: $text-color-white;
+  margin-top: 20px;
+  width: 300px;
+  height: 500px;
+  background-color: $mobile-menu-background;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-left: 20px;
+  line-height: 1.7;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  @media screen and(min-width: 768px) {
+    margin-top: 0;
+  }
+}
+.about__modal_text {
+  margin-top: 20px;
+}
